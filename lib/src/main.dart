@@ -175,7 +175,8 @@ class _CandlesticksState extends State<Candlesticks> {
           Expanded(
             child: Center(
               child: widget.loadingWidget ??
-                  Image(image: AssetImage("assets/loading.png")),
+                  // Image.asset("assets/loading.png")
+                  CircularProgressIndicator(color: Colors.deepOrange,)
             ),
           )
         else
