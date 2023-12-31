@@ -175,7 +175,7 @@ class _CandlesticksState extends State<Candlesticks> {
           Expanded(
             child: Center(
               child: widget.loadingWidget ??
-                  Image.network("https://firebasestorage.googleapis.com/v0/b/candlesticks-e0b24.appspot.com/o/loading.png?alt=media&token=e1f51e8b-51ff-4616-b539-8f5c58d23bbb"),
+                  Image(image: AssetImage("assets/loading.png")),
             ),
           )
         else
