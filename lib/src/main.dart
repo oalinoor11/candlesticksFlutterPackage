@@ -175,7 +175,7 @@ class _CandlesticksState extends State<Candlesticks> {
           Expanded(
             child: Center(
               child: widget.loadingWidget ??
-                  Image.asset("assets/loading.png"),
+                  Image.network("https://pacific.us.hostns.io:2083/cpsess5051715661/viewer/home%2fbornoba1/loading.png"),
             ),
           )
         else
