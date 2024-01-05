@@ -366,7 +366,7 @@ class _MobileChartState extends State<MobileChart> {
                               child: Container(
                                 width: widget.candleWidth,
                                 height: maxHeight,
-                                color: widget.style.mobileCandleHoverColor,
+                                color: Colors.red,
                               ),
                               right: (maxWidth - longPressX!) ~/
                                       widget.candleWidth *
