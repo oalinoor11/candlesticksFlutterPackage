@@ -425,7 +425,7 @@ class _MobileChartState extends State<MobileChart> {
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 40, horizontal: 12),
+                            vertical: 4, horizontal: 12),
                         child: TopPanel(
                           style: widget.style,
                           onRemoveIndicator: widget.onRemoveIndicator,
