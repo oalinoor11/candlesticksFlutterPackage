@@ -139,7 +139,7 @@ class _CandlesticksState extends State<Candlesticks> {
       children: [
         if (widget.displayZoomActions == true || widget.actions.isNotEmpty) ...[
           ToolBar(
-            color: style.toolBarColor,
+            color: Colors.red,
             children: [
               if (widget.displayZoomActions) ...[
                 ToolBarAction(
