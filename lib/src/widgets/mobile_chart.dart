@@ -374,55 +374,55 @@ class _MobileChartState extends State<MobileChart> {
                                   PRICE_BAR_WIDTH,
                             )
                           : Container(),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 50, bottom: 20),
-                        child: GestureDetector(
-                          onLongPressEnd: (_) {
-                            setState(() {
-                              longPressX = null;
-                              longPressY = null;
-                            });
-                          },
-                          onScaleEnd: (_) {
-                            widget.onPanEnd();
-                          },
-                          onScaleUpdate: (details) {
-                            if (details.scale == 1) {
-                              widget.onHorizontalDragUpdate(
-                                  details.focalPoint.dx);
-                              setState(() {
-                                if (manualScaleHigh != null) {
-                                  double deltaPrice =
-                                      details.focalPointDelta.dy /
-                                          chartHeight *
-                                          (manualScaleHigh! - manualScaleLow!);
-                                  manualScaleHigh =
-                                      manualScaleHigh! + deltaPrice;
-                                  manualScaleLow = manualScaleLow! + deltaPrice;
-                                }
-                              });
-                            }
-                            widget.onScaleUpdate(details.scale);
-                          },
-                          onScaleStart: (details) {
-                            widget.onPanDown(details.localFocalPoint.dx);
-                          },
-                          onLongPressStart: (LongPressStartDetails details) {
-                            setState(() {
-                              longPressX = details.localPosition.dx;
-                              longPressY = details.localPosition.dy;
-                            });
-                          },
-                          behavior: HitTestBehavior.translucent,
-                          onLongPressMoveUpdate:
-                              (LongPressMoveUpdateDetails details) {
-                            setState(() {
-                              longPressX = details.localPosition.dx;
-                              longPressY = details.localPosition.dy;
-                            });
-                          },
-                        ),
-                      ),
+                      // Padding(
+                      //   padding: const EdgeInsets.only(right: 50, bottom: 20),
+                      //   child: GestureDetector(
+                      //     onLongPressEnd: (_) {
+                      //       setState(() {
+                      //         longPressX = null;
+                      //         longPressY = null;
+                      //       });
+                      //     },
+                      //     onScaleEnd: (_) {
+                      //       widget.onPanEnd();
+                      //     },
+                      //     onScaleUpdate: (details) {
+                      //       if (details.scale == 1) {
+                      //         widget.onHorizontalDragUpdate(
+                      //             details.focalPoint.dx);
+                      //         setState(() {
+                      //           if (manualScaleHigh != null) {
+                      //             double deltaPrice =
+                      //                 details.focalPointDelta.dy /
+                      //                     chartHeight *
+                      //                     (manualScaleHigh! - manualScaleLow!);
+                      //             manualScaleHigh =
+                      //                 manualScaleHigh! + deltaPrice;
+                      //             manualScaleLow = manualScaleLow! + deltaPrice;
+                      //           }
+                      //         });
+                      //       }
+                      //       widget.onScaleUpdate(details.scale);
+                      //     },
+                      //     onScaleStart: (details) {
+                      //       widget.onPanDown(details.localFocalPoint.dx);
+                      //     },
+                      //     onLongPressStart: (LongPressStartDetails details) {
+                      //       setState(() {
+                      //         longPressX = details.localPosition.dx;
+                      //         longPressY = details.localPosition.dy;
+                      //       });
+                      //     },
+                      //     behavior: HitTestBehavior.translucent,
+                      //     onLongPressMoveUpdate:
+                      //         (LongPressMoveUpdateDetails details) {
+                      //       setState(() {
+                      //         longPressX = details.localPosition.dx;
+                      //         longPressY = details.localPosition.dy;
+                      //       });
+                      //     },
+                      //   ),
+                      // ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 4, horizontal: 12),
