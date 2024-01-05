@@ -255,30 +255,30 @@ class _MobileChartState extends State<MobileChart> {
                             flex: 1,
                             child: Row(
                               children: [
-                                // Expanded(
-                                //   child: Container(
-                                //     decoration: BoxDecoration(
-                                //       border: Border(
-                                //         right: BorderSide(
-                                //           color: widget.style.borderColor,
-                                //           width: 1,
-                                //         ),
-                                //       ),
-                                //     ),
-                                //     child: Padding(
-                                //       padding: const EdgeInsets.only(top: 10.0),
-                                //       child: VolumeWidget(
-                                //         candles: widget.candles,
-                                //         barWidth: widget.candleWidth,
-                                //         index: widget.index,
-                                //         high:
-                                //             HelperFunctions.getRoof(volumeHigh),
-                                //         bearColor: widget.style.secondaryBear,
-                                //         bullColor: widget.style.secondaryBull,
-                                //       ),
-                                //     ),
-                                //   ),
-                                // ),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      border: Border(
+                                        right: BorderSide(
+                                          color: widget.style.borderColor,
+                                          width: 1,
+                                        ),
+                                      ),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 10.0),
+                                      child: VolumeWidget(
+                                        // candles: widget.candles,
+                                        barWidth: widget.candleWidth,
+                                        index: widget.index,
+                                        high:
+                                            HelperFunctions.getRoof(volumeHigh),
+                                        bearColor: widget.style.secondaryBear,
+                                        bullColor: widget.style.secondaryBull,
+                                      ),
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(
                                   child: Column(
                                     crossAxisAlignment:
