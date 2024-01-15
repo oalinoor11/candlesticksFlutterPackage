@@ -265,18 +265,18 @@ class _MobileChartState extends State<MobileChart> {
                                         ),
                                       ),
                                     ),
-                                    // child: Padding(
-                                    //   padding: const EdgeInsets.only(top: 10.0),
-                                    //   child: VolumeWidget(
-                                    //     candles: widget.candles,
-                                    //     barWidth: widget.candleWidth,
-                                    //     index: widget.index,
-                                    //     high:
-                                    //         HelperFunctions.getRoof(volumeHigh),
-                                    //     bearColor: widget.style.secondaryBear,
-                                    //     bullColor: widget.style.secondaryBull,
-                                    //   ),
-                                    // ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 10.0),
+                                      child: VolumeWidget(
+                                        candles: widget.candles,
+                                        barWidth: widget.candleWidth,
+                                        index: widget.index,
+                                        high:
+                                            HelperFunctions.getRoof(volumeHigh),
+                                        bearColor: widget.style.secondaryBear,
+                                        bullColor: widget.style.secondaryBull,
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
