@@ -117,7 +117,7 @@ class _PriceColumnState extends State<PriceColumn> {
                         ),
                       ),
                     ),
-                    width: PRICE_BAR_WIDTH,
+                    width: PRICE_BAR_WIDTH+100,
                     height: PRICE_INDICATOR_HEIGHT,
                   ),
                 ],
