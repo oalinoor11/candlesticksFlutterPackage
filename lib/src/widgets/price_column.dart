@@ -108,6 +108,13 @@ class _PriceColumnState extends State<PriceColumn> {
                     color: widget.lastCandle.isBull
                         ? widget.style.primaryBull
                         : widget.style.primaryBear,
+                    width: double.infinity,
+                    height: 1,
+                  ),
+                  Container(
+                    color: widget.lastCandle.isBull
+                        ? widget.style.primaryBull
+                        : widget.style.primaryBear,
                     child: Center(
                       child: Text(
                         HelperFunctions.priceToString(widget.lastCandle.close),
@@ -117,7 +124,7 @@ class _PriceColumnState extends State<PriceColumn> {
                         ),
                       ),
                     ),
-                    width: PRICE_BAR_WIDTH+100,
+                    width: PRICE_BAR_WIDTH,
                     height: PRICE_INDICATOR_HEIGHT,
                   ),
                 ],
