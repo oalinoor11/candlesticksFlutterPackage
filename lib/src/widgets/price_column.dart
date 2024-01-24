@@ -108,7 +108,7 @@ class _PriceColumnState extends State<PriceColumn> {
                     color: widget.lastCandle.isBull
                         ? widget.style.primaryBull
                         : widget.style.primaryBear,
-                    width: 500,
+                    width: double.infinity,
                     height: 1,
                   ),
                   Container(
