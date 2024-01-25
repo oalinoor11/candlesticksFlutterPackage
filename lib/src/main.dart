@@ -189,7 +189,7 @@ class _CandlesticksState extends State<Candlesticks> {
                     Platform.isMacOS ||
                     Platform.isWindows ||
                     Platform.isLinux) {
-                  return DesktopChart(
+                  return MobileChart(
                     style: style,
                     onRemoveIndicator: widget.onRemoveIndicator,
                     mainWindowDataContainer: mainWindowDataContainer!,
